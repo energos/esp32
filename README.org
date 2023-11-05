@@ -7,6 +7,7 @@
 - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/][ESP-IDF Programming Guide - ESP32-C6]]
 - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html][ESP-IDF Setup for Windows]]
 - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/linux-macos-setup.html][ESP-IDF Setup for Linux and macOS]]
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/versions.html#updating-esp-idf][Updating ESP-IDF]]
 * ESP-IDF Linux Installation
 ** Install Prerequisites
 *** Void Linux
@@ -15,3 +16,28 @@
 : apt install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
 *** Gentoo
 : emerge -avn dev-vcs/git wget flex bison gperf python dev-python/pip virtualenv cmake dev-util/ninja ccache libffi openssl dfu-util dev-libs/libusb
+** Download and Setup
+#+begin_src sh
+mkdir -p ~/esp
+cd ~/esp
+git clone -b v5.1.1 --recursive https://github.com/espressif/esp-idf.git
+cd ~/esp/esp-idf
+./install.sh all
+#+end_src
+** Update the environment
+#+begin_src sh
+. ~/esp/esp-idf/export.sh
+export ESPPORT=/dev/ttyUSB0
+#+end_src
+Add to your ~/.bashrc
+#+begin_src sh
+alias idf_env='. $HOME/esp/esp-idf/export.sh ; export ESPPORT=/dev/ttyUSB0'
+#+end_src
+** Upgrade
+#+begin_src sh
+cd ~/esp/esp-idf
+git fetch
+git checkout v5.1.1
+git submodule update --init --recursive
+./install.sh all
+#+end_src
