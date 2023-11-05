@@ -1,1 +1,17 @@
 #+TITLE: Energos’s ESP32 Misadventures
+
+* Official Espressif Documentation
+- [[https://www.espressif.com/en/products/sdks/esp-idf][ESP-IDF - IoT Development Framework]]
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/][ESP-IDF Programming Guide - ESP32]]
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/][ESP-IDF Programming Guide - ESP32-C3]]
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/][ESP-IDF Programming Guide - ESP32-C6]]
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html][ESP-IDF Setup for Windows]]
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/linux-macos-setup.html][ESP-IDF Setup for Linux and macOS]]
+* ESP-IDF Linux Installation
+** Install Prerequisites
+*** Void Linux
+: xbps-install git wget flex bison gperf python3 python3-pip python3-virtualenv cmake ninja ccache libffi-devel libssl3 dfu-util libusb
+*** Debian
+: apt install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+*** Gentoo
+: emerge -avn dev-vcs/git wget flex bison gperf python dev-python/pip virtualenv cmake dev-util/ninja ccache libffi openssl dfu-util dev-libs/libusb
