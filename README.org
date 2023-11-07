@@ -62,3 +62,14 @@ sdkconfig
 sdkconfig.old
 EOF
 #+end_src
+** Create a new empty project
+#+begin_src sh
+idf_env
+idf.py create-project 00_empty
+cd 00_empty
+idf.py set-target esp32
+idf.py menuconfig
+idf.py build
+idf.py flash
+idf.py monitor
+#+end_src
