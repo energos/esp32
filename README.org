@@ -54,3 +54,11 @@ idf.py -p /dev/ttyUSB0 flash
 idf.py flash  # set ESPPORT environment variable first
 idf.py monitor
 #+end_src
+** Create or update .gitignore
+#+begin_src sh
+cat >> .gitignore << EOF
+build/
+sdkconfig
+sdkconfig.old
+EOF
+#+end_src
