@@ -4,6 +4,7 @@
 #include "driver/gpio.h"
 
 #define LED_PIN GPIO_NUM_2
+#define LED_DELAY pdMS_TO_TICKS(500)
 
 void app_main(void)
 {
@@ -15,10 +16,10 @@ void app_main(void)
     {
       gpio_set_level(LED_PIN, 1);
       printf("LED ON\n");
-      vTaskDelay(pdMS_TO_TICKS(500));
+      vTaskDelay(LED_DELAY);
 
       gpio_set_level(LED_PIN, 0);
       printf("LED OFF\n");
-      vTaskDelay(pdMS_TO_TICKS(500));
+      vTaskDelay(LED_DELAY);
     }
 }
