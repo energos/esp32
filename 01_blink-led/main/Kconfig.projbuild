@@ -1,0 +1,16 @@
+menu "Example Configuration"
+
+    config LED_PIN
+        int "Blink Led GPIO Pin Number"
+        range 0 39
+        default 2
+        help
+            GPIO number (IOxx) of the lovely blinking LED
+
+    config LED_DELAY
+        int "Blink Led HIGH and LOW time in ms"
+        default 1000
+        help
+            Blinking LED HIGH and LOW time in milliseconds
+
+endmenu
