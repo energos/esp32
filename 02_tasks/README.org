@@ -1,0 +1,5 @@
+#+TITLE: Tasks
+
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html][FreeRTOS (ESP-IDF)]]
+- [[https://www.youtube.com/watch?v=j4DC6MVgMRk&list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj&index=5][#4 FreeRTOS Tasks - esp-idf - YouTube]]
+- [[https://github.com/LetsControltheController/freertos-task1-espidf][GitHub: LetsControltheController - FreeRTOS Task example for esp-idf]]
