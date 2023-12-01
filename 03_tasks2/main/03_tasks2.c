@@ -12,13 +12,57 @@
 TaskHandle_t myTask1Handle = NULL;
 TaskHandle_t myTask2Handle = NULL;
 
+const char *eTaskStateToString(eTaskState state)
+{
+  switch (state)
+    {
+    case eRunning:
+      return "Running";
+    case eReady:
+      return "Ready";
+    case eBlocked:
+      return "Blocked";
+    case eSuspended:
+      return "Suspended";
+    case eDeleted:
+      return "Deleted";
+    default:
+      return "Invalid";
+    }
+}
+
 void task1(void *arg)
 {
   uint8_t led_state = 0;
+  int c = 0;
+  eTaskState task2State = eInvalid;
+  char *task2Name = "NoName";
   while (1)
     {
+      c = xTaskGetTickCount();
       gpio_set_level(LED1_PIN, led_state);
       led_state = !led_state;
+      if (c == 1003)
+        {
+          vTaskSuspend(myTask2Handle);
+          printf("=== Task2 Suspended! ===\n");
+        }
+      if (c == 2003)
+        {
+          vTaskResume(myTask2Handle);
+          printf("=== Task2 Resumed!   ===\n");
+        }
+      if (c == 3003)
+        {
+          vTaskDelete(myTask2Handle);
+          printf("=== Task2 Deleted!   ===\n");
+        }
+      if (c > 100)
+        {
+          task2State = eTaskGetState(myTask2Handle);
+          task2Name = pcTaskGetName(myTask2Handle);
+        }
+      printf("Hello from %s: %s is %s [%d]\n", pcTaskGetName(NULL), task2Name, eTaskStateToString(task2State), c);
       vTaskDelay(LED_DELAY_TICKS);
     }
 }
@@ -26,10 +70,13 @@ void task1(void *arg)
 void task2(void *arg)
 {
   uint8_t led_state = 0;
+  int c = 0;
   while (1)
     {
+      c = xTaskGetTickCount();
       gpio_set_level(LED2_PIN, led_state);
       led_state = !led_state;
+      printf("Hello from %s [%d]\n", pcTaskGetName(NULL), c);
       vTaskDelay(LED_DELAY_TICKS);
     }
 }
