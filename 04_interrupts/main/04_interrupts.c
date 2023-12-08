@@ -15,7 +15,7 @@
 
 TaskHandle_t ISR = NULL;
 
-void IRAM_ATTR button_isr_handler(void *arg)
+void button_isr_handler(void *arg)
 {
   xTaskResumeFromISR(ISR);
 }

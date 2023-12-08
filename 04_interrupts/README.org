@@ -23,6 +23,7 @@
     - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv424gpio_install_isr_servicei][gpio_install_isr_service]]
     - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv426gpio_uninstall_isr_servicev][gpio_uninstall_isr_service]]
     - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv420gpio_isr_handler_add10gpio_num_t10gpio_isr_tPv][gpio_isr_handler_add]]
+      + ISR handler has no need to be declared with IRAM_ATTR
     - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv423gpio_isr_handler_remove10gpio_num_t][gpio_isr_handler_remove]]
   + [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html][FreeRTOS]]
     - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv417xTaskGetTickCountv][xTaskGetTickCount]]
