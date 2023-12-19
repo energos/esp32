@@ -1,0 +1,4 @@
+#+TITLE: C Standard Library
+
+- [[https://sourceware.org/glibc/manual/html_mono/libc.html][The GNU C Library]]
+  + [[https://sourceware.org/glibc/manual/html_mono/libc.html#Formatted-Output][printf]]

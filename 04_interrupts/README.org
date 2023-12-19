@@ -4,36 +4,5 @@
 - [[https://www.youtube.com/playlist?list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj][LetsControltheController: ESP-IDF Series - YouTube]]
   + [[https://www.youtube.com/watch?v=VkCvKtRsunU&list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj][#6 FreeRTOS Tasks ISR (interrupt) - YouTube]]
     - [[https://github.com/LetsControltheController/freertos-task-ISR][Code for FreeRTOS Tasks ISR - GitHub]]
-- Functions used in this demo
-  + [[https://sourceware.org/glibc/manual/html_mono/libc.html][The GNU C Library]]
-    - [[https://sourceware.org/glibc/manual/html_mono/libc.html#Formatted-Output][printf]]
-  + [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html][GPIO & RTC GPIO]]
-    - esp_rom_gpio_pad_select_gpio
-      + undocumented ?
-      + obsolete/deprecated ?
-      + does not properly work with some pins ?
-      + replaced by gpio_reset_pin() ?
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv414gpio_reset_pin10gpio_num_t][gpio_reset_pin]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv418gpio_set_direction10gpio_num_t11gpio_mode_t][gpio_set_direction]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv414gpio_set_level10gpio_num_t8uint32_t][gpio_set_level]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv414gpio_get_level10gpio_num_t][gpio_get_level]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv418gpio_set_intr_type10gpio_num_t15gpio_int_type_t][gpio_set_intr_type]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv416gpio_intr_enable10gpio_num_t][gpio_intr_enable]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv417gpio_intr_disable10gpio_num_t][gpio_intr_disable]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv424gpio_install_isr_servicei][gpio_install_isr_service]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv426gpio_uninstall_isr_servicev][gpio_uninstall_isr_service]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv420gpio_isr_handler_add10gpio_num_t10gpio_isr_tPv][gpio_isr_handler_add]]
-      + ISR handler has no need to be declared with IRAM_ATTR
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html#_CPPv423gpio_isr_handler_remove10gpio_num_t][gpio_isr_handler_remove]]
-  + [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html][FreeRTOS]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv417xTaskGetTickCountv][xTaskGetTickCount]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv411xTaskCreate14TaskFunction_tPCKcK22configSTACK_DEPTH_TYPEPCv11UBaseType_tPC12TaskHandle_t][xTaskCreate]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv410vTaskDelayK10TickType_t][vTaskDelay]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv412vTaskSuspend12TaskHandle_t][vTaskSuspend]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv411vTaskResume12TaskHandle_t][vTaskResume]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv411vTaskDelete12TaskHandle_t][vTaskDelete]]
-      + see the [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#deletion][warnings]]
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv413pcTaskGetName12TaskHandle_t][pcTaskGetName]]
-      + returns garbage if called with an invalid task handle
-    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv413eTaskGetState12TaskHandle_t][eTaskGetState]]
-      + panics if called with an invalid task handle
+- [[../esp-idf.org][ESP-IDF API Reference]]
+- [[../c-library.org][C Standard Library]]

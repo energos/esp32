@@ -4,3 +4,5 @@
 - [[https://www.youtube.com/playlist?list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj][LetsControltheController: ESP-IDF Series - YouTube]]
   + [[https://www.youtube.com/watch?v=j4DC6MVgMRk&list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj][#4 FreeRTOS Tasks - YouTube]]
     - [[https://github.com/LetsControltheController/freertos-task1-espidf][Code for FreeRTOS Tasks - GitHub]]
+- [[../esp-idf.org][ESP-IDF API Reference]]
+- [[../c-library.org][C Standard Library]]

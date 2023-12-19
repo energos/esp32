@@ -1,1 +1,4 @@
 #+TITLE: Simple Led Blinking
+
+- [[../esp-idf.org][ESP-IDF API Reference]]
+- [[../c-library.org][C Standard Library]]
