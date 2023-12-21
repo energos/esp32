@@ -61,3 +61,25 @@
         - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#_CPPv413QueueHandle_t][QueueHandle_t]]
         - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html#id7][SemaphoreHandle_t]]
         - [[https://github.com/espressif/esp-idf/blob/master/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h#L95][TickType_t]]
+    - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html][Logging Library]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#_CPPv417esp_log_level_setPKc15esp_log_level_t][esp_log_level_set]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#_CPPv417esp_log_level_getPKc][esp_log_level_get]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#_CPPv417esp_log_timestampv][esp_log_timestamp]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#_CPPv424esp_log_system_timestampv][esp_log_system_timestamp]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOG_LEVEL][ESP_LOG_LEVEL]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOGE][ESP_LOGE]] - error
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOGW][ESP_LOGW]] - warning
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOGI][ESP_LOGI]] - info
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOGD][ESP_LOGD]] - debug
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOGV][ESP_LOGV]] - verbose
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOG_BUFFER_HEX][ESP_LOG_BUFFER_HEX]]
+      - [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#c.ESP_LOG_BUFFER_HEXDUMP][ESP_LOG_BUFFER_HEXDUMP]]
+      - Warning: some of these functions or macros should not be used from an interrupt
+      - Type Definitions
+        + [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/log.html#_CPPv415esp_log_level_t][esp_log_level_t]]
+          - ESP_LOG_NONE
+          - ESP_LOG_ERROR
+          - ESP_LOG_WARN
+          - ESP_LOG_INFO
+          - ESP_LOG_DEBUG
+          - ESP_LOG_VERBOSE

@@ -1,0 +1,8 @@
+#+TITLE: Logging
+
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/freertos_idf.html][FreeRTOS (ESP-IDF)]]
+- [[https://www.youtube.com/playlist?list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj][LetsControltheController: ESP-IDF Series - YouTube]]
+  + [[https://www.youtube.com/watch?v=_IC5cMnJpKY&list=PLmQ7GYcMY-2JV7afZ4hiekn8D6rRIgYfj][#10 ESP-IDF Logging - YouTube]]
+    - [[https://github.com/LetsControltheController/esp-idf-logging-debug][Code for ESP-IDF Logging - GitHub]]
+- [[../esp-idf.org][ESP-IDF API Reference]]
+- [[../c-library.org][C Standard Library]]
