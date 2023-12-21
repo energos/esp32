@@ -4,6 +4,8 @@
 
 * [[file:~/Work/esp32/c-library.org][C Standard Library]]
 * [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/index.html][ESP-IDF API Reference]]
+** [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/network/index.html][Networking APIs]]
+*** [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/network/esp_wifi.html][Wi-Fi]]
 ** [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/index.html][Peripherals API]]
 *** [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html][GPIO & RTC GPIO]]
 + esp_rom_gpio_pad_select_gpio
@@ -85,3 +87,5 @@
     - ESP_LOG_INFO
     - ESP_LOG_DEBUG
     - ESP_LOG_VERBOSE
+** [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/storage/index.html][Storage API]]
+*** [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/storage/nvs_flash.html][Non-volatile Storage Library]]
