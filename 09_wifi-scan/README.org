@@ -6,3 +6,24 @@
 - [[https://github.com/LetsControltheController/wifi-scan][Code for ESP-IDF WiFi Scanning - GitHub]]
 * [[../esp-idf.org][ESP-IDF API Reference]]
 * [[../c-library.org][C Standard Library]]
+* New functions, macros and type definitions used in this demo
+** Type Definitions
+- wifi_scan_config_t
+- wifi_ap_record_t
+- wifi_init_config_t
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/esp_err.html][esp_err_t]]
+** Functions
+- esp_wifi_scan_start
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/esp_err.html#c.ESP_ERROR_CHECK][ESP_ERROR_CHECK]]
+- esp_wifi_scan_get_ap_num
+- esp_wifi_scan_get_ap_records
+- tcpip_adapter_init
+  + [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/migration-guides/release-5.x/5.0/networking.html#network-stack-initialization][replaced]] by esp_netif_init
+- esp_wifi_init
+- esp_wifi_start
+- [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/storage/nvs_flash.html#_CPPv414nvs_flash_initv][nvs_flash_init]]
+- nvs_flash_erase
+- WIFI_INIT_CONFIG_DEFAULT
+** Macros
+- [[https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/storage/nvs_flash.html#c.ESP_ERR_NVS_NEW_VERSION_FOUND][ESP_ERR_NVS_NEW_VERSION_FOUND]]
+- [[https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/storage/nvs_flash.html#c.ESP_ERR_NVS_NO_FREE_PAGES][ESP_ERR_NVS_NO_FREE_PAGES]]
