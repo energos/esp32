@@ -27,4 +27,11 @@ menu "Example Configuration"
         help
             Blinking LED HIGH and LOW time in milliseconds
 
+    config WIFI_SCAN_LIST_SIZE
+        int "Max size of WiFi scan list"
+        range 0 20
+        default 10
+        help
+            The size of array that will be used to retrieve the list of WiFi access points.
+
 endmenu
