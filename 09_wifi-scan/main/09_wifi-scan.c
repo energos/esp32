@@ -34,10 +34,10 @@ void scan(void)
 
   /* print the list */
   printf("Found %d access points:\n", ap_num);
-  printf(" SSID                                   | Channel | RSSI | MAC\n");
-  printf("----------------------------------------|---------|------|------------------\n");
+  printf(" SSID                          | Channel | RSSI | MAC\n");
+  printf("-------------------------------|---------|------|------------------\n");
   for(int i = 0; i < ap_num; i++)
-    printf("%33s \t| %7d | %4d | %02x:%02x:%02x:%02x:%02x:%02x\n",\
+    printf(" %s\e[32G| %7d | %4d | %02x:%02x:%02x:%02x:%02x:%02x\n",\
            ap_records[i].ssid,\
            ap_records[i].primary,\
            ap_records[i].rssi,\
