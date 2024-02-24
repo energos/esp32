@@ -23,7 +23,7 @@
 #+begin_src sh
 mkdir -p ~/esp
 cd ~/esp
-git clone -b v5.1.1 --recursive https://github.com/espressif/esp-idf.git
+git clone -b release/v5.2 --recursive https://github.com/espressif/esp-idf.git
 cd ~/esp/esp-idf
 ./install.sh all
 #+end_src
